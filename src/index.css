@@ -18,6 +18,6 @@ footer { background-color: rgb(17, 133, 96); font-size: .75rem; }
 header, footer { color: #FFF; }
 .icon-wrapper object { width: 3rem; fill: #FFF; }
 
-main { width: 100%; background-color: #f8f8f8; }
+main { width: 100%; }
 .city-wrapper, .state-wrapper { display: inline-block; }
 .city-wrapper { width: 70%; padding-right: 1rem; } .state-wrapper { width: 30%; }
