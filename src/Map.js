@@ -2,7 +2,6 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 export default function Verify({ setView }) {
 	const key = process.env.REACT_APP_GOOGLE_MAPS_KEY;
-	console.log(key)
 	const mapStyles = {        
 		minHeight: '20rem',
 		width: '100%'};
