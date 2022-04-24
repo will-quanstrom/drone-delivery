@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Form from './Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+	const [greeting, setGreeting] = useState('Welcome');
+
+	return (
+		<div className='d-flex flex-column justify-content-between' style={{ minHeight: "100vh" }}>
+			<Header />
+			<main className='container text-center pb-5 px-lg-5'>
+				<h4 className='my-5'>{greeting}</h4>
+				<Form setGreeting={setGreeting} />	
+			</main>
+			<Footer />
+		</div>
+	);
 }
-
-export default App;
