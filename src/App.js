@@ -6,7 +6,7 @@ import Map from "./Map";
 
 export default function App() {
 	const [greeting, setGreeting] = useState('Welcome');
-	const [view, setView] = useState('map');
+	const [view, setView] = useState('form');
 	let currentView;
 	if (view === 'form') currentView = <Form setGreeting={setGreeting} setView={setView} />;
 	if (view === 'map') currentView = <Map />
